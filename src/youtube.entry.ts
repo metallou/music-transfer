@@ -1,0 +1,5 @@
+(
+  (): void => {
+    console.debug('youtube');
+  }
+)();
