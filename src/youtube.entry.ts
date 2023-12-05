@@ -6,7 +6,7 @@
 	while (loop) {
 	  loop = false;
 	  test--;
-	  const buttonToLike = document.querySelector('.like [aria-pressed="false"]');
+	  const buttonToLike = document.querySelector('ytmusic-playlist-shelf-renderer .like [aria-pressed="false"]');
 	  if (buttonToLike instanceof HTMLButtonElement) {
 	    loop = true;
 		

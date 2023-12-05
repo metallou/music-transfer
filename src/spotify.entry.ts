@@ -6,7 +6,7 @@
 	while (loop) {
 	  loop = false;
 	  test--;
-	  const buttonToUnlike = document.querySelector('[aria-label="Remove from Your Library"]');
+	  const buttonToUnlike = document.querySelector('data-testid="playlist-tracklist" [aria-label="Remove from Your Library"]');
 	  if (buttonToUnlike instanceof HTMLButtonElement) {
 	    loop = true;
 		
