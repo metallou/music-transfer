@@ -10,7 +10,7 @@
 	  if (buttonToLike instanceof HTMLButtonElement) {
 	    loop = true;
 		
-		button.scrollIntoView({
+		buttonToLike.scrollIntoView({
             behavior: 'auto',
             block: 'center',
             inline: 'center',
