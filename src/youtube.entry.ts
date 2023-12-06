@@ -6,9 +6,15 @@
 	    return;
 	  }
 	  
+	  button.scrollIntoView({
+        behavior: 'auto',
+        block: 'center',
+        inline: 'center',
+      });
+	  
 	  button.click();
 	});
 	
-	return buttons.length;
+	console.debug(buttons.length);
   }
 )();
