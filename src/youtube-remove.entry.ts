@@ -1,18 +1,15 @@
 (
   (): void => {
-    const buttons = document.querySelectorAll('ytmusic-playlist-shelf-renderer .like [aria-pressed="false"]');
-    buttons.forEach((button): void => {
-	  if (!(button instanceof HTMLButtonElement)) {
+    const buttons = document.querySelectorAll('ytmusic-playlist-shelf-renderer button[aria-label="J\'aime"][aria-pressed="true"]');
+    buttons.forEach((button: HTMLButtonElement, currentIndex: number): void => {
+      if (currentIndex === 0) {
 	    return;
 	  }
 	  
-	  button.scrollIntoView({
-        behavior: 'auto',
-        block: 'center',
-        inline: 'center',
-      });
+	  const parent = button.closest('ytmusic-responsive-list-item-renderer');
+	  const selector = parent.querySelector('.multi-select-overlay');
 	  
-	  button.click();
+	  selector.click();
 	});
 	
 	console.debug(buttons.length);

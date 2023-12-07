@@ -1,11 +1,7 @@
 (
   (): void => {
-    const buttons = document.querySelectorAll('ytmusic-playlist-shelf-renderer .like [aria-pressed="false"]');
-    buttons.forEach((button): void => {
-	  if (!(button instanceof HTMLButtonElement)) {
-	    return;
-	  }
-	  
+    const buttons = document.querySelectorAll('ytmusic-playlist-shelf-renderer button[aria-label="J\'aime"][aria-pressed="false"]');
+    buttons.forEach((button: HTMLButtonElement): void => {
 	  button.scrollIntoView({
         behavior: 'auto',
         block: 'center',
