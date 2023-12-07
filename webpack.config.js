@@ -3,8 +3,9 @@ const path         = require('path');
 
 module.exports = {
   entry: {
-    "spotify": path.resolve(__dirname, 'src/spotify.entry.ts'),
-    "youtube": path.resolve(__dirname, 'src/youtube.entry.ts')
+    "spotify-unlike": path.resolve(__dirname, 'src/spotify-unlike.entry.ts'),
+    "youtube-like": path.resolve(__dirname, 'src/youtube-like.entry.ts'),
+    "youtube-remove": path.resolve(__dirname, 'src/youtube-remove.entry.ts')
   },
   output: {
     chunkFilename: '[name].js',
