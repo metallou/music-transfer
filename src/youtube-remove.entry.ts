@@ -10,7 +10,14 @@
 			}
 
 			const parent = button.closest('ytmusic-responsive-list-item-renderer');
+			if (parent === null) {
+				return;
+			}
+			
 			const selector = parent.querySelector('.multi-select-overlay');
+			if (selector === null) {
+				return;
+			}
 
 			selector.click();
 		});
