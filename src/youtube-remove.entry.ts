@@ -15,7 +15,7 @@
 			}
 			
 			const selector = parent.querySelector('.multi-select-overlay');
-			if (selector === null) {
+			if (!(selector instanceof HTMLElement)) {
 				return;
 			}
 
